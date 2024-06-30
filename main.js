@@ -270,8 +270,8 @@ completedbtn.addEventListener('click',(e)=>{
     completedbtn.classList.add('colored')
 })
 
-// checkallbtn.innerHTML = 'Check All'
-// saveData()
+checkallbtn.innerHTML = 'Check All'
+saveData()
 function saveData() {
     localStorage.setItem("all-task-list-data", alltasklist.innerHTML)
     localStorage.setItem("pending-list-data", pendinglist.innerHTML)
