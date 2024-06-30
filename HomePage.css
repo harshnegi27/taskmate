@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&display=swap');
+
+:root{
+    --leftbgcol : #E1E2E2 ;
+    --rightbgCol : #1D2228;
+    --btncol : rgb(83, 24, 138);
+    --hoverCol : rgb(73, 21, 121);
+    --txtCOl : white;
+}
+
+nav{
+    width: 100vw;
+    height: 10vh;
+    padding: 0 2vw;
+    position: fixed;
+    top: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav div{
+    display: flex;
+}
+
+.logo {
+    width: 5vmin;
+    margin-right: 1vmin; 
+
+}
+
+.heading {
+    color: var(--rightbgCol);
+    font-size: 4.5vmin;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    right: 40px;
+    position: fixed;
+}
+
+ul li{
+    font-size: 18px;
+    color: var(--leftbgcol);
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+ul li img{
+    padding: 4px;
+}
+
+ul li:hover{
+    text-decoration: underline;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: poppins; */
+    font-family: "Jost", sans-serif;
+}
+
+html {
+    background-color: white;    
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+.content{
+    text-align: center;
+    width: 700px;
+    
+}
+
+.firstline{
+    font-size: 69px;
+    font-weight: 600;
+    color: var(--txtCOl);
+}
+
+.secondline{
+    font-size: 21px;
+    font-weight: 475;
+    font-family: poppins;
+    color: var(--txtCOl);
+}
+
+a{
+    font-size: 19px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    padding: 12px 16px;
+}
+
+.left{
+    height: 100vh;
+    background-color: var(--leftbgcol);
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#illustration{
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    bottom: 20px;
+    
+    
+}
+
+.right{
+    height: 100vh;
+    width: 55vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--rightbgCol);
+}
+
+button{
+    margin-top: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--btncol);
+    padding: 8px 16px;
+}
+
+button:hover{
+    background-color: var(--hoverCol);
+}
